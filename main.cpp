@@ -9,7 +9,7 @@ int to_number(std::string& line, int fail_safe = 1) {
     try {
         return std::stoi(line);
     } catch (const std::invalid_argument& e) {
-        std::printf("unknown character, selecting 1");
+        std::printf("Unknown character, selecting 1");
     }
 
     return fail_safe;
